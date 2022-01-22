@@ -10,17 +10,21 @@ export default function Home() {
 
   if (session) {
     return (
-      <>
-        Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()}>Sign out</button>
-      </>
+      <div className="signInDiv">
+        <p className="signIn">Signed in as {session.user.email}</p> <br />
+        <button className="logIn" onClick={() => signOut()}>
+          Sign out
+        </button>
+      </div>
     );
   }
   return (
-    <>
-      Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
+    <div className="signInDiv">
+      <p className="signIn">Not signed in </p> <br />
+      <button className="logIn" onClick={() => signIn()}>
+        Sign in
+      </button>
       <TodoList />
-    </>
+    </div>
   );
 }

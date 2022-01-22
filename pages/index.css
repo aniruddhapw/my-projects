@@ -5,7 +5,6 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-
 body {
   background: linear-gradient(
     90deg,
@@ -13,18 +12,18 @@ body {
     rgba(100, 115, 255, 1) 100%
   );
 }
-.todo-form {
+.todo-app {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   width: 520px;
-
+  min-height: 600px;
+  background: #161a2b;
   text-align: center;
   margin: 128px auto;
   border-radius: 10px;
   padding-bottom: 32px;
 }
-
 h1 {
   margin: 32px 0;
   color: #fff;
@@ -39,7 +38,6 @@ h1 {
 .todo-form {
   margin-bottom: 32px;
 }
-
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
@@ -68,7 +66,6 @@ h1 {
   color: #fff;
   text-transform: capitalize;
 }
-
 .todo-input.edit {
   border: 2px solid #149fff;
 }
@@ -99,10 +96,9 @@ h1 {
     rgba(255, 118, 20, 1) 0%,
     rgba(255, 84, 17, 1) 100%
   );
-
   padding: 16px;
   border-radius: 5px;
-  width: 70%;
+  width: 90%;
 }
 
 .todo-row:nth-child(4n + 1) {
@@ -112,7 +108,6 @@ h1 {
     rgba(155, 0, 250, 1) 100%
   );
 }
-
 .todo-row:nth-child(4n + 2) {
   background: linear-gradient(
     90deg,
@@ -143,4 +138,33 @@ h1 {
 
 .edit-icon {
   color: #fff;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logIn {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #ffffff;
+  text-transform: capitalize;
+  width: 100px;
+  margin: auto;
+}
+.signIn {
+  font-size: 20px;
+  margin: auto;
+}
+.signInDiv {
+  display: flex;
+  flex-direction: column;
 }
